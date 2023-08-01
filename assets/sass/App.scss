@@ -1,0 +1,30 @@
+@import "reset";
+@import "grid";
+@import "container";
+@import "main";
+
+html,
+body {
+  background-image: url("../../assets/img/bg4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animateIn {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+//========================
