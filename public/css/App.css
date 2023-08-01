@@ -292,8 +292,9 @@ a {
     width: 100%;
   }
   .main-container .info img {
-    top: -16rem;
-    max-width: 55rem;
+    padding: 0;
+    top: -12.5rem;
+    width: 100%;
     transform: translateX(-49%);
   }
 }

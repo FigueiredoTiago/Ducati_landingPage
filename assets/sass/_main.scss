@@ -103,8 +103,9 @@
     @include device("s") {
       width: 100%;
       img {
-        top: -16rem;
-        max-width: 55rem;
+        padding: 0;
+        top: -12.5rem;
+        width: 100%;
         transform: translateX(-49%);
       }
     }
