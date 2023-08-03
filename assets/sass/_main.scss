@@ -108,8 +108,8 @@
       img#img {
         padding: 0;
         top: -12.5rem;
-        width: 100%;
-        transform: translateX(-49%);
+        width: 110%;
+        transform: translateX(-48%);
       }
     }
 
@@ -189,7 +189,7 @@
       }
 
       @include device("s") {
-        top: 13rem;
+        top: 11rem;
       }
 
       div {

@@ -295,8 +295,8 @@ a {
   .main-container .info img#img {
     padding: 0;
     top: -12.5rem;
-    width: 100%;
-    transform: translateX(-49%);
+    width: 110%;
+    transform: translateX(-48%);
   }
 }
 .main-container .info .info-text {
@@ -367,7 +367,7 @@ a {
 }
 @media screen and (max-width: 760px) {
   .main-container .info .colors {
-    top: 13rem;
+    top: 11rem;
   }
 }
 .main-container .info .colors div {
