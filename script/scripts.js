@@ -1,16 +1,15 @@
-const btn = document.getElementById('btn');
+const colorOne = document.getElementById('color-1');
+const colorTwo = document.getElementById('color-2');
 
-function changeModel() {
+function changeImg(url) {
     const img = document.getElementById('img');
-
-    if (img.src.endsWith("XDiavel.png")) {
-        img.src = "../assets/img/DiavelS.png";
-    } else {
-        img.src = "../assets/img/XDiavel.png";
-    }
-
-
+    img.style.opacity = 0;
+    setTimeout(function () {
+        img.src = url;
+        img.style.opacity = 1;
+    }, 300);
 }
 
+colorOne.addEventListener('click', () => changeImg('assets/img/DiavelSred.png'));
 
-btn.addEventListener('click', () => changeModel());
+colorTwo.addEventListener('click', () => changeImg('assets/img/DiavelS.png'));
