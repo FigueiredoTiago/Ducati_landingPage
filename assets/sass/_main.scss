@@ -50,7 +50,7 @@
   .info {
     width: 100%;
     height: 35rem;
-    padding: 1rem;
+    padding: 2rem;
 
     background-color: #ffffff68;
     backdrop-filter: blur(1rem);
@@ -127,18 +127,16 @@
         flex-direction: column;
 
         p.info-p {
-          color: #181818;
-          font-weight: 100;
+          color: #000000;
           font-size: 1.6rem;
           margin-top: 0.5rem;
-          margin-bottom: 1rem;
+          margin-bottom: 0.5rem;
         }
 
         h4.info-h4 {
           font-size: 1.8rem;
           color: #df1f26;
           font-weight: bold;
-          margin-bottom: 0.5rem;
         }
       }
 
@@ -178,28 +176,47 @@
     }
 
     .colors {
-      max-width: 11rem;
+      //max-width: 11rem;
       display: flex;
       gap: 1rem;
-
       position: absolute;
       bottom: 5rem;
       left: 50%;
-      transform: translateX(-65%);
+      transform: translateX(-50%);
+
+      @include device("m") {
+        left: 75%;
+      }
+
+      @include device("s") {
+        top: 13rem;
+      }
 
       div {
         max-width: 100%;
-        width: 5rem;
-        height: 5rem;
-        border-radius: 1rem;
+        width: 15rem;
+        height: 3rem;
+        border-radius: 0.5rem 2rem 0.5rem 2rem;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-image: url("../../assets/img/colorYellow.png");
         cursor: pointer;
+        &:hover {
+          border: 1px solid yellow;
+        }
 
         &:nth-child(1) {
           background-image: url("../../assets/img/colorBlack.png");
+
+          &:hover {
+            border: 1px solid #fdfdfd;
+          }
+        }
+
+        @include device("s") {
+          width: 10rem;
+          height: 2.5rem;
         }
       }
     }

@@ -241,7 +241,7 @@ a {
 .main-container .info {
   width: 100%;
   height: 35rem;
-  padding: 1rem;
+  padding: 2rem;
   background-color: rgba(255, 255, 255, 0.4078431373);
   -webkit-backdrop-filter: blur(1rem);
           backdrop-filter: blur(1rem);
@@ -313,17 +313,15 @@ a {
   flex-direction: column;
 }
 .main-container .info .info-text div p.info-p {
-  color: #181818;
-  font-weight: 100;
+  color: #000000;
   font-size: 1.6rem;
   margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .main-container .info .info-text div h4.info-h4 {
   font-size: 1.8rem;
   color: #df1f26;
   font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 @media screen and (min-width: 760px) and (max-width: 1200px) {
   .main-container .info .info-text div {
@@ -355,27 +353,48 @@ a {
   }
 }
 .main-container .info .colors {
-  max-width: 11rem;
   display: flex;
   gap: 1rem;
   position: absolute;
   bottom: 5rem;
   left: 50%;
-  transform: translateX(-65%);
+  transform: translateX(-50%);
+}
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+  .main-container .info .colors {
+    left: 75%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .main-container .info .colors {
+    top: 13rem;
+  }
 }
 .main-container .info .colors div {
   max-width: 100%;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 1rem;
+  width: 15rem;
+  height: 3rem;
+  border-radius: 0.5rem 2rem 0.5rem 2rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../../assets/img/colorYellow.png");
   cursor: pointer;
 }
+.main-container .info .colors div:hover {
+  border: 1px solid yellow;
+}
 .main-container .info .colors div:nth-child(1) {
   background-image: url("../../assets/img/colorBlack.png");
+}
+.main-container .info .colors div:nth-child(1):hover {
+  border: 1px solid #fdfdfd;
+}
+@media screen and (max-width: 760px) {
+  .main-container .info .colors div {
+    width: 10rem;
+    height: 2.5rem;
+  }
 }
 
 html,
