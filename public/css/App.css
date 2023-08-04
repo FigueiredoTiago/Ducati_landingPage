@@ -226,6 +226,7 @@ header.info-header p span {
 section.motor-section {
   position: relative;
   height: 40%;
+  max-height: 40rem;
   padding: 0 1rem;
   background-color: rgba(88, 86, 86, 0.2039215686);
   -webkit-backdrop-filter: blur(10px);
@@ -233,19 +234,46 @@ section.motor-section {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 760px) {
+  section.motor-section {
+    align-items: end;
+  }
+}
 section.motor-section section.section-img-content {
-  max-width: 75rem;
+  max-width: 70rem;
   position: absolute;
   top: -15em;
   left: 28rem;
 }
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+  section.motor-section section.section-img-content {
+    left: 24rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  section.motor-section section.section-img-content {
+    left: 3rem;
+  }
+}
 section.motor-section section.section-img-content img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   transition: opacity 0.5s ease;
 }
 section.motor-section div.info-text {
   font-family: "Handjet", cursive;
+}
+@media screen and (max-width: 760px) {
+  section.motor-section div.info-text {
+    display: flex;
+    align-items: center;
+  }
+  section.motor-section div.info-text div {
+    flex-direction: column;
+  }
+  section.motor-section div.info-text div p, section.motor-section div.info-text div h4 {
+    font-size: 1.6rem;
+  }
 }
 section.motor-section div.info-text div {
   display: flex;
@@ -269,12 +297,23 @@ section.motor-section p.slogan {
   right: 2rem;
   bottom: 2rem;
 }
+@media screen and (max-width: 760px) {
+  section.motor-section p.slogan {
+    display: none;
+  }
+}
 section.motor-section div.colors {
   position: absolute;
   display: flex;
   align-items: center;
   gap: 1rem;
   right: 12rem;
+}
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+  section.motor-section div.colors {
+    bottom: 6rem;
+    right: 3rem;
+  }
 }
 section.motor-section div.colors div {
   max-width: 100%;

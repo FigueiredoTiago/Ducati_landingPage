@@ -36,6 +36,7 @@ header.info-header {
 section.motor-section {
   position: relative;
   height: 40%;
+  max-height: 40rem;
   padding: 0 1rem;
   background-color: #58565634;
   backdrop-filter: blur(10px);
@@ -43,13 +44,26 @@ section.motor-section {
   display: flex;
   align-items: center;
 
+  @include device("s") {
+    align-items: end;
+  }
+
   section.section-img-content {
-    max-width: 75rem;
+    max-width: 70rem;
     position: absolute;
     top: -15em;
     left: 28rem;
+
+    @include device("m") {
+      left: 24rem;
+    }
+
+    @include device("s") {
+      left: 3rem;
+    }
+
     img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       transition: opacity 0.5s ease;
     }
@@ -57,6 +71,19 @@ section.motor-section {
 
   div.info-text {
     font-family: "Handjet", cursive;
+
+    @include device("s") {
+     display: flex;
+     align-items: center;
+
+     div {
+      flex-direction: column;
+
+      p, h4 {
+        font-size: 1.6rem;
+      }
+     }
+    }
 
     div {
       display: flex;
@@ -84,6 +111,10 @@ section.motor-section {
     position: absolute;
     right: 2rem;
     bottom: 2rem;
+
+    @include device("s") {
+      display: none;
+    }
   }
 
   div.colors {
@@ -92,6 +123,12 @@ section.motor-section {
     align-items: center;
     gap: 1rem;
     right: 12rem;
+
+
+    @include device("m") {
+      bottom: 6rem;
+      right: 3rem;
+    }
     div {
       max-width: 100%;
       width: 5rem;
