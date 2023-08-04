@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@200;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+main.container-main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header.info-header {
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-style: italic;
+
+  h1 {
+    font-size: 7rem;
+    font-weight: 700;
+    color: red;
+  }
+
+  p {
+    position: relative;
+    font-size: 8rem;
+    span {
+      position: absolute;
+      color: red;
+      font-size: 10rem;
+    }
+  }
+}
+
+section.motor-section {
+  position: relative;
+  height: 40%;
+  padding: 0 1rem;
+  background-color: #58565634;
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  align-items: center;
+
+  section.section-img-content {
+    max-width: 75rem;
+    position: absolute;
+    top: -15em;
+    left: 28rem;
+    img {
+      max-width: 100%;
+      height: auto;
+      transition: opacity 0.5s ease;
+    }
+  }
+
+  div.info-text {
+    font-family: "Handjet", cursive;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    p.info-p {
+      font-weight: 200;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    h4.info-h4 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+
+  p.slogan {
+    font-family: "Kaushan Script", cursive;
+    font-size: 3rem;
+    font-style: italic;
+
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+  }
+
+  div.colors {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    right: 12rem;
+    div {
+      max-width: 100%;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("../../assets/img/colorYellow.png");
+      cursor: pointer;
+
+      &:nth-child(1) {
+        background-image: url("../../assets/img/colorBlack.png");
+      }
+    }
+  }
+}

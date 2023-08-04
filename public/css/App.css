@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -192,219 +194,109 @@ a {
   clear: both;
 }
 
-.content {
+main.container-main {
   height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.main-container {
-  position: relative;
-  height: 100%;
+header.info-header {
   width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  height: 60%;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-style: italic;
+}
+header.info-header h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  color: red;
+}
+header.info-header p {
+  position: relative;
+  font-size: 8rem;
+}
+header.info-header p span {
+  position: absolute;
+  color: red;
+  font-size: 10rem;
+}
+
+section.motor-section {
+  position: relative;
+  height: 40%;
+  padding: 0 1rem;
+  background-color: rgba(88, 86, 86, 0.2039215686);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
 }
-.main-container .ducati-title-mobile {
-  display: none;
-  margin-bottom: 7rem;
-  font-family: "Italianno", cursive;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.39);
-}
-.main-container .ducati-title-mobile p {
-  font-size: 5rem;
-}
-.main-container .ducati-title-mobile h1 {
-  font-size: 6rem;
-  color: #df1f26;
-}
-@media screen and (max-width: 760px) {
-  .main-container .ducati-title-mobile {
-    display: block;
-  }
-}
-.main-container .logo {
-  height: 9.7rem;
-  width: 9rem;
-}
-@media screen and (max-width: 760px) {
-  .main-container .logo {
-    margin-top: 1rem;
-    height: 8rem;
-    width: 7rem;
-  }
-}
-.main-container .info {
-  width: 100%;
-  height: 35rem;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.4078431373);
-  -webkit-backdrop-filter: blur(1rem);
-          backdrop-filter: blur(1rem);
-  border-radius: 3rem;
-}
-.main-container .info img#img {
+section.motor-section section.section-img-content {
+  max-width: 75rem;
   position: absolute;
-  top: -25rem;
-  left: 50%;
-  transform: translateX(-55%);
-  width: 100%;
-  max-width: 70rem;
+  top: -15em;
+  left: 28rem;
+}
+section.motor-section section.section-img-content img {
+  max-width: 100%;
+  height: auto;
   transition: opacity 0.5s ease;
 }
-.main-container .info div.ducati-title {
-  font-family: "Italianno", cursive;
-  color: #000000;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.39);
-  position: absolute;
-  top: 3rem;
-  right: 3rem;
+section.motor-section div.info-text {
+  font-family: "Handjet", cursive;
 }
-.main-container .info div.ducati-title p {
-  font-size: 4rem;
-}
-.main-container .info div.ducati-title h1 {
-  font-size: 6rem;
-  color: #df1f26;
-}
-@media screen and (min-width: 760px) and (max-width: 1200px) {
-  .main-container .info div.ducati-title h1 {
-    font-size: 5rem;
-  }
-}
-@media screen and (max-width: 760px) {
-  .main-container .info div.ducati-title {
-    display: none;
-  }
-}
-@media screen and (min-width: 760px) and (max-width: 1200px) {
-  .main-container .info img#img {
-    max-width: 64rem;
-    padding: 4rem;
-    transform: translateX(-68%);
-  }
-}
-@media screen and (max-width: 760px) {
-  .main-container .info {
-    width: 100%;
-  }
-  .main-container .info img#img {
-    padding: 0;
-    top: -12.5rem;
-    width: 110%;
-    transform: translateX(-48%);
-  }
-}
-.main-container .info .info-text {
-  position: absolute;
-  left: 3rem;
-  bottom: 3rem;
+section.motor-section div.info-text div {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+section.motor-section div.info-text p.info-p {
+  font-weight: 200;
+  font-size: 2rem;
+  color: #fff;
+}
+section.motor-section div.info-text h4.info-h4 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+section.motor-section p.slogan {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3rem;
+  font-style: italic;
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+section.motor-section div.colors {
+  position: absolute;
+  display: flex;
+  align-items: center;
   gap: 1rem;
+  right: 12rem;
 }
-.main-container .info .info-text div {
-  display: flex;
-  flex-direction: column;
-}
-.main-container .info .info-text div p.info-p {
-  color: #000000;
-  font-size: 1.6rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.main-container .info .info-text div h4.info-h4 {
-  font-size: 1.8rem;
-  color: #df1f26;
-  font-weight: bold;
-}
-@media screen and (min-width: 760px) and (max-width: 1200px) {
-  .main-container .info .info-text div {
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .main-container .info .info-text div h4.info-h4 {
-    margin: 0;
-  }
-  .main-container .info .info-text div p.info-p {
-    margin: 0;
-  }
-}
-@media screen and (max-width: 760px) {
-  .main-container .info .info-text div {
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .main-container .info .info-text div p.info-p {
-    margin: 0;
-    padding: 0;
-  }
-  .main-container .info .info-text div h4.info-h4 {
-    font-size: 1.6rem;
-    margin: 0;
-    padding: 0;
-  }
-}
-.main-container .info .colors {
-  display: flex;
-  gap: 1rem;
-  position: absolute;
-  bottom: 5rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-@media screen and (min-width: 760px) and (max-width: 1200px) {
-  .main-container .info .colors {
-    left: 75%;
-  }
-}
-@media screen and (max-width: 760px) {
-  .main-container .info .colors {
-    top: 11rem;
-  }
-}
-.main-container .info .colors div {
+section.motor-section div.colors div {
   max-width: 100%;
-  width: 15rem;
-  height: 3rem;
-  border-radius: 0.5rem 2rem 0.5rem 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../../assets/img/colorYellow.png");
   cursor: pointer;
 }
-.main-container .info .colors div:hover {
-  border: 1px solid yellow;
-}
-.main-container .info .colors div:nth-child(1) {
+section.motor-section div.colors div:nth-child(1) {
   background-image: url("../../assets/img/colorBlack.png");
 }
-.main-container .info .colors div:nth-child(1):hover {
-  border: 1px solid #fdfdfd;
-}
-@media screen and (max-width: 760px) {
-  .main-container .info .colors div {
-    width: 10rem;
-    height: 2.5rem;
-  }
-}
 
-html,
-body {
+html {
   background-image: url("../../assets/img/bg4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes fadeIn {

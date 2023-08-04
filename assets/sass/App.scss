@@ -1,16 +1,14 @@
 @import "reset";
 @import "grid";
 @import "container";
-@import "main";
+@import "index2";
 
-html,
-body {
+html {
   background-image: url("../../assets/img/bg4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
-  font-family: 'Montserrat', sans-serif;
 }
 
 @keyframes fadeIn {
