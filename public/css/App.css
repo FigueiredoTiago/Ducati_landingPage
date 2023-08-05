@@ -222,6 +222,17 @@ header.info-header p span {
   color: red;
   font-size: 10rem;
 }
+@media screen and (max-width: 760px) {
+  header.info-header h1 {
+    font-size: 6rem;
+  }
+  header.info-header p {
+    font-size: 6rem;
+  }
+  header.info-header p span {
+    font-size: 6rem;
+  }
+}
 
 section.motor-section {
   position: relative;
@@ -256,7 +267,7 @@ section.motor-section section.section-img-content {
 }
 @media screen and (max-width: 760px) {
   section.motor-section section.section-img-content {
-    left: 1rem;
+    left: 0rem;
     top: -11rem;
   }
 }
@@ -343,9 +354,7 @@ section.motor-section div.colors div:nth-child(1) {
 }
 @media screen and (max-width: 760px) {
   section.motor-section div.colors {
-    bottom: 10rem;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 13rem;
   }
 }
 
