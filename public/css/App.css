@@ -228,6 +228,8 @@ section.motor-section {
   height: 40%;
   max-height: 40rem;
   padding: 0 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
   background-color: rgba(88, 86, 86, 0.2039215686);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -236,7 +238,9 @@ section.motor-section {
 }
 @media screen and (max-width: 760px) {
   section.motor-section {
+    padding: 1rem;
     align-items: end;
+    max-height: 25rem;
   }
 }
 section.motor-section section.section-img-content {
@@ -252,7 +256,11 @@ section.motor-section section.section-img-content {
 }
 @media screen and (max-width: 760px) {
   section.motor-section section.section-img-content {
-    left: 3rem;
+    left: 0rem;
+    top: -11rem;
+  }
+  section.motor-section section.section-img-content img {
+    min-width: 37rem;
   }
 }
 section.motor-section section.section-img-content img {
@@ -261,18 +269,19 @@ section.motor-section section.section-img-content img {
   transition: opacity 0.5s ease;
 }
 section.motor-section div.info-text {
+  width: 100% !important;
   font-family: "Handjet", cursive;
 }
 @media screen and (max-width: 760px) {
   section.motor-section div.info-text {
     display: flex;
-    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: flex-start !important;
   }
-  section.motor-section div.info-text div {
-    flex-direction: column;
-  }
-  section.motor-section div.info-text div p, section.motor-section div.info-text div h4 {
-    font-size: 1.6rem;
+  section.motor-section div.info-text div p,
+  section.motor-section div.info-text div h4 {
+    font-size: 1.6rem !important;
   }
 }
 section.motor-section div.info-text div {
@@ -328,6 +337,19 @@ section.motor-section div.colors div {
 }
 section.motor-section div.colors div:nth-child(1) {
   background-image: url("../../assets/img/colorBlack.png");
+}
+@media screen and (max-width: 760px) {
+  section.motor-section div.colors div {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  section.motor-section div.colors {
+    bottom: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 html {

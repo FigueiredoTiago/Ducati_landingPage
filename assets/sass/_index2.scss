@@ -38,6 +38,8 @@ section.motor-section {
   height: 40%;
   max-height: 40rem;
   padding: 0 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
   background-color: #58565634;
   backdrop-filter: blur(10px);
 
@@ -45,7 +47,10 @@ section.motor-section {
   align-items: center;
 
   @include device("s") {
+    padding: 1rem;
     align-items: end;
+    max-height: 25rem;
+
   }
 
   section.section-img-content {
@@ -59,7 +64,12 @@ section.motor-section {
     }
 
     @include device("s") {
-      left: 3rem;
+      left: 0rem;
+      top: -11rem;
+
+      img {
+        min-width: 37rem;
+      }
     }
 
     img {
@@ -70,19 +80,23 @@ section.motor-section {
   }
 
   div.info-text {
+    width: 100% !important;
     font-family: "Handjet", cursive;
 
     @include device("s") {
-     display: flex;
-     align-items: center;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: flex-start !important;
 
-     div {
-      flex-direction: column;
+      div {
 
-      p, h4 {
-        font-size: 1.6rem;
+
+        p,
+        h4 {
+          font-size: 1.6rem !important;
+        }
       }
-     }
     }
 
     div {
@@ -124,7 +138,6 @@ section.motor-section {
     gap: 1rem;
     right: 12rem;
 
-
     @include device("m") {
       bottom: 6rem;
       right: 3rem;
@@ -143,6 +156,17 @@ section.motor-section {
       &:nth-child(1) {
         background-image: url("../../assets/img/colorBlack.png");
       }
+
+      @include device("s") {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
+
+    @include device("s") {
+      bottom: 10rem;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }
