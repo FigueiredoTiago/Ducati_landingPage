@@ -49,7 +49,7 @@ section.motor-section {
   @include device("s") {
     padding: 1rem;
     align-items: end;
-    max-height: 25rem;
+    max-height: 30rem;
 
   }
 
@@ -64,12 +64,8 @@ section.motor-section {
     }
 
     @include device("s") {
-      left: 0rem;
+      left: 1rem;
       top: -11rem;
-
-      img {
-        min-width: 37rem;
-      }
     }
 
     img {
