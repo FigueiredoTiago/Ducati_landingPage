@@ -221,7 +221,7 @@ header.info-header p span {
 }
 @media screen and (max-width: 760px) {
   header.info-header h1 {
-    margin-top: 2rem;
+    margin-top: 5rem;
     font-size: 6rem;
   }
   header.info-header p {
@@ -242,6 +242,7 @@ section.motor-section {
   background-color: rgba(88, 86, 86, 0.2039215686);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  box-shadow: 3px 10px 35px 11px rgba(0, 0, 0, 0.561);
   display: flex;
   align-items: center;
 }
@@ -249,7 +250,7 @@ section.motor-section {
   section.motor-section {
     padding: 1rem;
     align-items: end;
-    max-height: 30rem;
+    max-height: 35rem;
   }
 }
 section.motor-section section.section-img-content {
@@ -260,13 +261,14 @@ section.motor-section section.section-img-content {
 }
 @media screen and (min-width: 760px) and (max-width: 1200px) {
   section.motor-section section.section-img-content {
-    left: 24rem;
+    left: 22rem;
+    width: 55rem;
   }
 }
 @media screen and (max-width: 760px) {
   section.motor-section section.section-img-content {
     left: 0rem;
-    top: -11rem;
+    top: -14rem;
   }
 }
 section.motor-section section.section-img-content img {
@@ -299,6 +301,7 @@ section.motor-section div.info-text p.info-p {
   font-weight: 200;
   font-size: 2rem;
   color: #fff;
+  text-shadow: 0 0 1rem #000;
 }
 section.motor-section div.info-text h4.info-h4 {
   font-size: 3rem;
@@ -328,7 +331,7 @@ section.motor-section div.colors div {
   max-width: 100%;
   width: 5rem;
   height: 5rem;
-  border-radius: 50%;
+  border-radius: 10%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -346,13 +349,13 @@ section.motor-section div.colors div:nth-child(1) {
 }
 @media screen and (min-width: 760px) and (max-width: 1200px) {
   section.motor-section div.colors {
-    bottom: 6rem;
-    right: 3rem;
+    bottom: 10rem;
+    right: 15rem;
   }
 }
 @media screen and (max-width: 760px) {
   section.motor-section div.colors {
-    bottom: 13rem;
+    bottom: 15rem;
     right: 14rem;
   }
 }
