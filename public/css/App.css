@@ -355,7 +355,7 @@ section.motor-section div.colors div:nth-child(1) {
 }
 @media screen and (max-width: 760px) {
   section.motor-section div.colors {
-    bottom: 15rem;
+    bottom: 14rem;
     right: 14rem;
   }
 }
