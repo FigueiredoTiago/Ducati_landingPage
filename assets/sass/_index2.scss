@@ -19,7 +19,10 @@ header.info-header {
   h1 {
     font-size: 7rem;
     font-weight: 700;
-    color: red;
+    background-image: linear-gradient(45deg, #ff0000, #c70000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   p {
@@ -51,7 +54,7 @@ section.motor-section {
   padding: 0 1rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
-  background-color: #58565634;
+  background-color: #6b686851;
   backdrop-filter: blur(10px);
   box-shadow: 3px 10px 35px 11px rgba(0, 0, 0, 0.561);
 
@@ -132,6 +135,7 @@ section.motor-section {
     position: absolute;
     right: 2rem;
     bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
     @include device("s") {
       display: none;
