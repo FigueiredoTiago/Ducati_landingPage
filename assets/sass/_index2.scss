@@ -63,7 +63,6 @@ section.motor-section {
     padding: 1rem;
     align-items: end;
     max-height: 30rem;
-
   }
 
   section.section-img-content {
@@ -99,11 +98,9 @@ section.motor-section {
       align-items: flex-start !important;
 
       div {
-
-
         p,
         h4 {
-          font-size: 1.6rem !important;
+          font-size: 1.8rem !important;
         }
       }
     }
@@ -145,12 +142,8 @@ section.motor-section {
     display: flex;
     align-items: center;
     gap: 1rem;
-    right: 12rem;
+    right: 8rem;
 
-    @include device("m") {
-      bottom: 6rem;
-      right: 3rem;
-    }
     div {
       max-width: 100%;
       width: 5rem;
@@ -167,13 +160,19 @@ section.motor-section {
       }
 
       @include device("s") {
-        width: 3rem;
-        height: 3rem;
+        width: 4rem;
+        height: 4rem;
       }
+    }
+
+    @include device("m") {
+      bottom: 6rem;
+      right: 3rem;
     }
 
     @include device("s") {
       bottom: 13rem;
+      right: 14rem;
     }
   }
 }

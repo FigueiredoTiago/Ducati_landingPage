@@ -289,7 +289,7 @@ section.motor-section div.info-text {
   }
   section.motor-section div.info-text div p,
   section.motor-section div.info-text div h4 {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
   }
 }
 section.motor-section div.info-text div {
@@ -324,13 +324,7 @@ section.motor-section div.colors {
   display: flex;
   align-items: center;
   gap: 1rem;
-  right: 12rem;
-}
-@media screen and (min-width: 760px) and (max-width: 1200px) {
-  section.motor-section div.colors {
-    bottom: 6rem;
-    right: 3rem;
-  }
+  right: 8rem;
 }
 section.motor-section div.colors div {
   max-width: 100%;
@@ -348,13 +342,20 @@ section.motor-section div.colors div:nth-child(1) {
 }
 @media screen and (max-width: 760px) {
   section.motor-section div.colors div {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1200px) {
+  section.motor-section div.colors {
+    bottom: 6rem;
+    right: 3rem;
   }
 }
 @media screen and (max-width: 760px) {
   section.motor-section div.colors {
     bottom: 13rem;
+    right: 14rem;
   }
 }
 
