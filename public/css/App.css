@@ -214,16 +214,14 @@ header.info-header h1 {
   color: red;
 }
 header.info-header p {
-  position: relative;
   font-size: 8rem;
 }
 header.info-header p span {
-  position: absolute;
   color: red;
-  font-size: 10rem;
 }
 @media screen and (max-width: 760px) {
   header.info-header h1 {
+    margin-top: 2rem;
     font-size: 6rem;
   }
   header.info-header p {
